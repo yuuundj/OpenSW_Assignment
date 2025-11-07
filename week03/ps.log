@@ -1,0 +1,24 @@
+UID          PID    PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root           1       0  0  5380 12284   6 09:51 ?        00:00:00 /sbin/init
+root           2       1  0   765  1664   1 09:51 ?        00:00:00 /init
+root           6       2  0   769  1792   7 09:51 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          52       1  0 16685 16544   5 09:51 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root         105       1  0  6350  6272   1 09:51 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     111       1  0  5363 12032   2 09:51 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     112       1  0 22755  7552   7 09:51 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         171       1  0  1059  2560   2 09:51 ?        00:00:00 /usr/sbin/cron -f -P
+message+     172       1  0  2399  4992   4 09:51 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         197       1  0  4490  8576   2 09:51 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         214       1  0 439024 12288  3 09:51 ?        00:00:00 /usr/libexec/wsl-pro-service -vv
+root         229       1  0   790  2048   6 09:51 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         232       1  0   779  1920   7 09:51 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+syslog       238       1  0 55627  5504   0 09:51 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         284       1  0 26758 22400   3 09:51 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         375       2  0   769   896   2 09:51 ?        00:00:00 /init
+root         376     375  0   769  1152   0 09:51 ?        00:00:00 /init
+daram        377     376  0  1551  5120   4 09:51 pts/0    00:00:00 -bash
+root         378       2  0  1705  4352   5 09:51 pts/1    00:00:00 /bin/login -f
+daram        467       1  0  5073 11392   0 09:51 ?        00:00:00 /usr/lib/systemd/systemd --user
+daram        470     467  0  5287  3520   2 09:51 ?        00:00:00 (sd-pam)
+daram        479     378  0  1518  4992   4 09:51 pts/1    00:00:00 -bash
+daram        825     377  0  2074  4224   3 10:57 pts/0    00:00:00 ps -eF
