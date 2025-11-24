@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
     int read_result;
 
     while (1) {
-        read_result = read(1, readStr, BUF_SIZE);
+        read_result = read(0, readStr, BUF_SIZE);
         if (read_result == 0) {
             printf("Detected EOF (Ctrl + D)\n");
             break;
